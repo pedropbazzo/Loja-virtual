@@ -1,0 +1,726 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800);
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	background:#1E90FF;
+}
+textarea, input[type="text"]{
+	outline: none;-webkit-appearance: none;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+p {
+	font: 14px 'Open Sans', Arial, Helvetica, sans-serif;
+	line-height:26px;
+}
+a, span {
+	font: 14px 'Open Sans', Arial, Helvetica, sans-serif;
+	line-height:26px;
+}
+h3 {
+	font:16px 'Open Sans', Arial, Helvetica, sans-serif;
+	line-height:28px;
+	color:#333;
+}
+h2 {
+	font:24px 'Open Sans', Arial, Helvetica, sans-serif;
+	line-height:36px;
+	color:#1E90FF;
+}
+input,textarea{
+	outline:none;
+}
+
+
+
+
+
+
+
+
+header {width: 100%;height:auto;float:left;position:fixed;z-index:10;background:#0cf;}
+header p {color:#fff;}
+
+header nav {width:100%;height:auto;float:left;background:#09f;text-align:right;}
+header nav a {margin:0 30px;font: 14px 'Open Sans', Arial, Helvetica, sans-serif;line-height:45px;color:#fff;}
+header nav a:last-of-type{margin-right:0 !important;}
+header div#logo {width:426px;height:100px;float:left;}
+header div#logo img {width:100px;float:left;}
+
+header div#search {width:426px;height:100px;float:left;margin-top:15px;}
+header div#search form {margin-top:10px;}
+header div#search input[type="text"] {width:280px;height:30px;float:left;padding:10px;border:none;border-top-left-radius:4px;border-bottom-left-radius:4px;background:#fff;font: 16px 'Open Sans', Arial, Helvetica, sans-serif;color:#666;}
+header div#search input[type="submit"] {width:100px;height:50px;float:left;background:#999;border:none;border-top-right-radius:4px;border-bottom-right-radius:4px;color:#fff;}
+
+header div#cart {width:426px;height:85px;float:left;text-align:right;margin-top:40px;}
+header div#cart a {margin-top:10px;}
+
+
+
+
+
+
+
+
+
+
+section {
+	width: 100%;
+	min-height: 90%;
+	float: left;
+	position:relative;
+	top:165px;
+	left:0;
+	right:0;
+	background:#fff;
+}
+.container {
+	display:table;
+	width:1280px;
+	height:auto;
+	margin:auto;
+}
+#menu_subcatg{
+	width:210px;
+	min-height:100%;
+	float:left;
+	padding: 0 0px;
+	background:#fff;
+}
+#menu_subcatg a:hover{
+	color:#1E90FF;
+}
+#produtos{
+	width:1070px;
+	float:right;
+}
+#prod {
+	display:block;
+	width:23.17%;
+	float:left;
+	padding: 0 1%;
+	margin-bottom:50px;
+	background:#fff;
+	border-right: solid 1px #cecece;
+}
+#prod:nth-of-type(4),
+#prod:nth-of-type(8),
+#prod:nth-of-type(12),
+#prod:nth-of-type(16),
+#prod:nth-of-type(20) {
+	border-right: none !important;
+	padding-right:0;
+}
+#prod > span {
+	width:100%;
+	min-height:40px;
+	float:left;
+	color:#333;
+	font-size: 11px;
+}
+#prod > h3:nth-of-type(1) {
+	width:100%;
+	float:left;
+	margin-top:10px;
+	min-height:40px;
+}
+#prod > h3:nth-of-type(2) {
+	width:100%;
+	float:left;
+	font-size: 22px;
+}
+#prod:hover > form#detail > input {
+	background:#1E90FF;
+}
+#prod:hover > form#buy > input {
+	background:#1E90FF;
+}
+#prod figure {
+	width:100%;
+	height:190px;
+	float:left;
+}
+figure#banners{
+	width:100%;
+	float:left;
+	margin:25px 0;
+}
+footer {
+	width:100%;
+	height:auto;
+	float:left;
+	padding:20px 0;
+	position:relative;
+	top:165px;
+	left:0;
+	right:0;
+	background:#1E90FF;
+}
+footer div div#foocred{
+	width:580px;
+	float:left;
+	margin-right:120px;
+	/*background:#033; ESSA FOI A COR QUE EU CURTI PARA FAZER ALGO SOBRE MONEY, PAGAMENTO, CONTRATAÇÃO ETC */
+}
+footer p {
+	font: 12px 'Open Sans', Arial;
+	color:#fff;
+	line-height:normal;
+	text-align: justify;
+}
+footer i {
+	font-size: 32px;
+	color:#fff;
+	line-height:normal;
+	text-align: justify;
+}
+footer a {
+	font: 12px 'Open Sans', Arial;
+	color:#fff;
+	line-height:24px;
+}
+footer div#links a {
+	width:100%;
+	float:left;
+	line-height:17.5px;
+}
+footer p a {
+	font: 12px 'Open Sans', Arial;
+	color:#fc0;
+	text-align: justify;
+}
+footer h3 {
+	line-height:35px !important;
+}
+footer figure:nth-of-type(1){
+	width:200px;
+	float:left;
+}
+footer figure:nth-of-type(2){
+	width:320px;
+	float:left;
+	margin-left:20px;
+}
+footer figure img{
+	width:100%;
+}
+div.fb{
+	width:300px;
+	float:right;
+	border-radius:4px !important;
+}
+section > div > p{
+	width:100%;
+	float:left;
+	color:#1E90FF !important;
+	border-top: solid 1px #ccc;
+}
+div#details{
+	width:690px;
+	height:auto;
+	float:left;
+	margin-top: 10px;
+	margin-right:10px;
+	background:#fff;
+}
+
+div#details > figure{
+	width:670px;
+	height:auto;
+	float:left;
+	padding:10px;
+	}
+div#details > figure > img{
+	width:100%;
+	float:left;
+}
+aside{
+	width:300px;
+	height:auto;
+	float:left;
+	margin:10px 0;
+	background:#fff;
+}
+aside > form#buy{
+	width:280px;
+	height:auto;
+	float:left;
+	padding:10px;
+}
+aside > form#buy > input[type="text"],
+aside > form#buy > input[type="password"]{
+	width: 270px;
+	height: 45px;
+	float: left;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: none;
+	border-radius:4px;
+}
+aside > form#buy > input[type="submit"]{
+	width: 280px;
+	height: 50px;
+	float: left;
+	border: none;
+	border-radius:4px;
+	color: #fff;
+}
+#asks{
+	width:650px;
+	height:auto;
+	float:left;
+	padding:10px;
+	border-radius:4px;
+	background:#ececec;
+}
+#asks > p{
+	font: 14px 'Open Sans', Arial, Helvetica, sans-serif;
+	line-height:24px;
+	color:#000;
+}
+.xxx {
+	font: 14px 'Open Sans', Arial, Helvetica, sans-serif !important;
+	line-height:24px;
+	color:#000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type="submit"]:hover{cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------- */
+
+[type=radio] {
+    display: block;
+}
+:checked + div {
+    display: block !important;
+}
+div#details > form#comments{
+	width:670px;
+	height:auto;
+	float:left;
+	padding:10px;
+	background:#ccc;
+}
+div#details > form#comments > input[type="text"]{
+	width: 320px;
+	height: 45px;
+	float: left;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: none;
+	border-radius:4px;
+}
+div#details > form#comments > input[type="submit"]{
+	width: 300px;
+	height: 50px;
+	float: left;
+	border: none;
+	border-radius:4px;
+	color: #fff;
+	background:#999;
+}
+div#details > form#comments > textarea{
+	width: 660px;
+	height: 155px;
+	float: left;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: none;
+	border-radius:4px;
+}
+
+
+
+
+/* ==================================== FORMULÁRIOS ============================================ */
+
+/* do not group these rules */
+*::-webkit-input-placeholder {
+	font: 12px 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #999;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    font: 12px 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #999;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    font: 12px 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #999;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    font: 12px 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #999;
+}
+
+
+
+
+
+#menu_catg{
+	width:1000px;
+	float:right;
+	margin: 20px 0 10px 0;
+	border-radius: 4px;
+}
+#menu_catg li{
+	width:18%;
+	float:left;
+	margin:0 1%;
+}
+#menu_catg li a{
+	width:100%;
+	float:left;
+	text-align: center;
+	color:#fff;
+	font-size:14px;
+	line-height:32px;
+	background:#1E90FF;
+	border-radius: 4px;
+}
+#menu_catg li a:hover{
+	background:#777;
+}
+#prod figure{
+	-webkit-transition: all 0.5s;-moz-transition: all 0.5s;transition: all 0.5s;
+}
+#prod figure:hover{
+	opacity:0.8;
+	-webkit-transition: all 0.5s;-moz-transition: all 0.5s;transition: all 0.5s;
+}
+#prod form#detail {
+	width:50%;
+	float:left;
+	margin-top:10px;
+}
+#prod form#detail input {
+	display:block;
+	width:100%;
+	float:left;
+	border:none;
+	font: 14px 'Open Sans', Arial, Helvetica, sans-serif;
+	color:#fff;
+	line-height:50px;
+	border-bottom-left-radius:4px;
+}
+#prod form#detail input:hover {
+	cursor:pointer;
+}
+#prod form#pay {
+	width:100%;
+	float:right;
+	margin-top:10px;
+
+}
+#prod form#buy input {
+	width:100%;
+	float:right;
+	border:none;
+	font: 14px 'Open Sans', Arial, Helvetica, sans-serif;
+	color:#fff;
+	line-height:50px;
+	background:#1E90FF;
+}
+#prod form#buy input:hover {
+	cursor:pointer;
+	background: #333;
+}
+#prod form#visit {
+	width:100%;
+	float:left;
+	margin-top:10px;
+}
+#prod form#visit input {
+	width:100%;
+	float:left;
+	border:none;
+	font: 14px 'Open Sans', Arial, Helvetica, sans-serif;
+	color:#fff;
+	line-height:50px;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+	background:#999;
+}
+#prod form#visit input:hover {
+	cursor:pointer;
+}
+#form_login {
+	display: table;
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+	position:relative;
+	top:100px;
+}
+#form_login input[type="text"],
+#form_login input[type="password"] {
+	width: 290px;
+	height: 45px;
+	float: left;
+	margin-bottom:4px;
+	padding: 5px;
+	border: none;
+	border-radius:4px;
+}
+#form_login input[type="submit"],
+#form_login input[type="button"] {
+	width: 300px;
+	height: 50px;
+	float: left;
+	border: none;
+	border-radius:4px;
+	color: #fff;
+}
+#form_signin {
+	display: table;
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+	position:relative;
+	top:100px;
+}
+#form_signin input[type="text"],
+#form_signin input[type="password"] {
+	width: 290px;
+	height: 45px;
+	float: left;
+	margin-bottom:10px;
+	padding: 5px;
+	border: none;
+	border-radius:4px;
+}
+#form_signin input[type="submit"],
+#form_signin input[type="button"] {
+	width: 300px;
+	height: 50px;
+	float: left;
+	border: none;
+	border-radius:4px;
+	color: #fff;
+}
+#form_prod {
+	display: table;
+	width: 300px;
+	height: auto;
+	padding:20px 0;
+	margin: 0 auto;
+	position:relative;
+}
+#form_prod input[type="text"],
+#form_prod input[type="password"] {
+	width: 290px;
+	height: 45px;
+	float: left;
+	margin-bottom:10px;
+	padding: 5px;
+	border: none;
+	border-radius:4px;
+}
+#form_prod input[type="submit"],
+#form_prod input[type="button"] {
+	width: 300px;
+	height: 50px;
+	float: left;
+	border: none;
+	border-radius:4px;
+	color: #fff;
+}
+#form_settings {
+	display: table;
+	width: 300px;
+	height: auto;
+	padding:20px 0;
+	margin: 0 auto;
+	position:relative;
+}
+#form_settings input[type="text"],
+#form_settings input[type="password"] {
+	width: 290px;
+	height: 45px;
+	float: left;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: none;
+	border-radius:4px;
+}
+#form_settings input[type="submit"],
+#form_settings input[type="button"] {
+	width: 300px;
+	height: 50px;
+	float: left;
+	border: none;
+	border-radius:4px;
+	color: #fff;
+}
+
+
+
+
+
+form#pay {
+	display: table;
+	width: 100%;
+	height: auto;
+	float:left;
+	margin:0 0 60px 0;
+	border-radius:4px;
+	background:#ccc;
+}
+form#pay fieldset:nth-of-type(1) {
+	width:39.70%;
+	height:auto;
+	float:left;
+	padding:5%;
+	border:none;
+	border-right: solid 1px #999;
+}
+form#pay fieldset:nth-of-type(2) {
+	width:40%;
+	height:auto;
+	float:right;
+	margin:5%;
+	border:none;
+}
+form#pay fieldset:nth-of-type(3) {
+	width:40%;
+	height:auto;
+	float:left;
+	margin:5%;
+	border:none;
+}
+form#pay input[type="text"],
+form#pay input[list="Instituicao"],
+form#pay input[type="password"] {
+	width: 100%;
+	height: 35px;
+	float: left;
+	margin-bottom:4px;
+	padding: 0 5px;
+	border: none;
+	border-radius:4px;
+}
+form#pay input[type="submit"],
+form#pay input[type="button"] {
+	width: 100%;
+	height: 50px;
+	float: left;
+	border: none;
+	border-radius:4px;
+	color: #fff;
+	background:#1E90FF;
+}
+
+form#checkout {
+	display: table;
+	width: 90%;
+	height: auto;
+	float:left;
+	margin:5%;
+	border-radius:4px;
+	background:#1E90FF;
+}
+form#checkout input[type="text"] {
+	width: 90%;
+	height: 35px;
+	float: left;
+	margin-bottom:4px;
+	padding: 2.5%;
+	margin: 2.5%;
+	border: none;
+	border-radius:4px;
+}
+form#checkout input[type="submit"],
+form#checkout input[type="button"] {
+	width: 100%;
+	height: 50px;
+	float: left;
+	border: none;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+	color: #fff;
+	background:#1E90FF;
+}
+form#checkout input[type="submit"]:hover,
+form#checkout input[type="button"]:hover {
+	cursor: pointer;
+	background:#f50;
+}
+
+
+
+
+
+#warn{
+	width:90%;
+	height:auto;
+	float:left;
+	padding:20px 5%;
+	margin-top:20px;
+	background:#fff;
+	border-radius:5px;
+	font: 12px 'Open Sans', Arial;
+	line-height: 24px;
+	text-align: center;
+	color:#000;
+}
+#warn a{
+	width:auto;
+	padding:10px 20px;
+	background:#f50;
+	border-radius:5px;
+	font: 12px 'Open Sans', Arial;
+	line-height: 24px;
+	text-align: center;
+	color:#fff;
+}
+
+
+
+
+
+
+   
+
+

@@ -1,0 +1,53 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Traz o https:// ao endereço
+  # RewriteCond %{HTTPS} !=on
+  # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Traz o www ao endereço
+  rewritecond %{http_host} ^stylusbeauty.com.br [nc]
+  rewriterule ^(.*)$ http://www.stylusbeauty.com.br/$1 [r=301,nc]
+ 
+  # Página de login, cadastro e busca
+  RewriteRule ^meuspedidos/?$ meuspedidos.php [NC,L]
+  RewriteRule ^comocomprar/?$ comocomprar.php [NC,L]
+  RewriteRule ^seguranca/?$ seguranca.php [NC,L]
+  RewriteRule ^contato/?$ contato.php [NC,L]
+  RewriteRule ^quemsomos/?$ quemsomos.php [NC,L]
+  RewriteRule ^admin/?$ admin.php [NC,L]
+  RewriteRule ^signin/?$ signin.php [NC,L]
+  RewriteRule ^search/?$ search.php [NC,L]
+  RewriteRule ^terms/?$ terms.php [NC,L]
+  RewriteRule ^control/?$ control.php [NC,L]
+  RewriteRule ^carrinho/?$ carrinho.php [NC,L]
+  
+  RewriteRule ^checkout/?$ checkout.php [NC,L]
+  RewriteRule ^payment/?$ payment.php [NC,L]
+  RewriteRule ^home/?$ home.php [NC,L]
+
+  # Página de exibição de uma loja
+
+  RewriteRule ^([a-z0-9-]+)/?$ store.php?catg=$1 [NC]
+  RewriteRule ^([a-z0-9-]+)/([a-z0-9-]+)/?$ store.php?catg=$1&subcatg=$2 [NC]
+  RewriteRule ^([a-z0-9-]+)/([a-z0-9-]+)/([a-z0-9-]+)/?$ store.php?catg=$1&subcatg=2&prod=$3 [NC]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  # RewriteRule ^([a-z0-9-]+)/?$ details.php?prod=$1 [NC]
+  # RewriteRule ^([a-z0-9-]+)/([a-z0-9-]+)/([a-z0-9-]+)/?$ store.php?catg=$1&subcatg=2&prod=$3 [NC]
+  # RewriteRule ^([a-z0-9-]+)/([a-z0-9-]+)/?$ details.php?catg=$1&subcatg=$2 [NC]
+
+</IfModule>
